@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 700px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+td.clickable {
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
+}
+
+td.person {
+  width: 50px;
+  font-weight: bold;
+  color: #555;
+}
+
+td.status {
+  font-weight: bold;
+  color: #dc3545;
+  width: 60px;
+}
+
+td.status.done {
+  color: #28a745;
+}
+
+tr:hover td.clickable {
+  background-color: #f1f1f1;
+}
+/* ...der Rest bleibt wie vorher... */
+
+td.status.clickable {
+  cursor: pointer;
+  font-weight: bold;
+  color: #dc3545;
+  width: 60px;
+  user-select: none;
+}
+
+td.status.done {
+  color: #28a745;
+}
+
+tr:hover td.status.clickable {
+  background-color: #f1f1f1;
+}
